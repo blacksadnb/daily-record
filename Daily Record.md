@@ -124,3 +124,37 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 git add是把文件加入暂存区
 
 git commit是把暂存区文件提交到分支branch
+
+发现了一个解决git rm问题的好网站https://stackoverflow.com/questions/2125710/how-to-revert-a-git-rm-r
+
+所以用git rm不光会删除工作区的文件，还会破坏index
+
+而使用rm删除工作去的文件不会破坏index，所以可以直接用git checkout -- xxx恢复
+
+破坏了index后只能回溯版本用git reset head，回到最新的版本库（只要git rm后没commit更新head）
+
+如果reset之前缓存区有important的待提交的changes，使用git stash可以save your uncommited changes
+
+```
+git stash 
+git reset --hard
+git stash pop
+```
+
+>working tree：就是你所工作在的目录，每当你在代码中进行了修改，working tree的状态就改变了。
+index file：是索引文件，它是连接working tree和commit的桥梁，每当我们使用git-add命令来登记后，index file的内容就改变了，此时index file就和working tree同步了。
+commit：是最后的阶段，只有commit了，我们的代码才真正进入了git仓库。我们使用git-commit就是将index file里的内容提交到commit中。
+总结一下：
+git diff：是查看working tree与index file的差别的。
+git diff --cached：是查看index file与commit的差别的。
+git diff HEAD：是查看working tree和commit的差别的，在这里HEAD代表的是最近的一次commit的信息。
+![git中3大区关系](https://img-blog.csdn.net/20180302162826778)
+版权声明：本文为CSDN博主「生活因我绚丽」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/heart_mine/article/details/79424591
+
+### 我有一个猜测
+
+我在输入git reset sss.txt时出现了Use '--' to separate filenames from revisions，like this：```git <command> [<revision>...] -- [<file>...]```
+
+而用git reset -- sss.txt时很顺利，综合搜索我知道"用`--`分割文件名和版本号"，所以是否用了`--`但不输入版本号就默认head了呢，所以我输入git reset -- sss.txt时不会出现错误
+
