@@ -34,9 +34,7 @@ banana
 现在你可以不用 `document.getElementById()` 了，现代浏览器都把复制了 `id` 属性的元素放在了
 全局变量里。
 
- ```var a = 0;
-var b = 1;
-var c = a + b;```
+
 
 
 ~~我被删除了~~
