@@ -1,10 +1,10 @@
-#这是一个段落#
+# 这是一个段落
 
 香蕉派
 
 banana
 
-##这是第二个段落##
+## 这是第二个段落
 
 苹果派
 >***错的不是我，错的是这个世界***.
@@ -37,7 +37,7 @@ banana
 
 现在你可以不用 `document.getElementById()` 了，现代浏览器都把复制了 `id` 属性的元素放在了
 全局变量里。
-
+aaaaa
 
 
 
@@ -45,7 +45,7 @@ banana
 September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 
 <h1><font color="#0ff">
-学习使用git的第二天
+		学习使用git的第二天
 </font></h1>
 
 我在与`git pro`艰难地搏斗后彻底放弃
@@ -56,9 +56,9 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 
 张雪峰直接给出了
 
->$ mkdir learngit
- $ cd learngit
- $ pwd
+> $ mkdir learngit<br>
+  $ cd learngit<br>
+  $ pwd<br>
  /Users/michael/learngit
 
 说这样就可以创建版本库
@@ -67,14 +67,14 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 
 于是乎我去找到了别人做的[*git的命令总结*](https://www.cnblogs.com/chris0710/p/8925977.html)
 
->$ cd:e // 切换盘符<br>
+> $ cd:e // 切换盘符<br>
  $ cd .. // 回到文件上一层(注: cd与..中间有个空格)<br>
  $ cd ~ // 回到当前目录的主目录<br>
  $ cd 文件夹名 //去到当前目录内的叫该名的文件夹<br>
- $ mkdir Git // 创建文件夹Git
- $ pwd // 显示当前路径/e/Git/learngit
- $ git log //查看现在版本库的状态
- $ cat .xxx // 查看当前文件（xxx）所有配置信息（包括别名信息）
+ $ mkdir Git // 创建文件夹Git<br>
+ $ pwd // 显示当前路径/e/Git/learngit<br>
+ $ git log //查看现在版本库的状态<br>
+ $ cat .xxx // 查看当前文件（xxx）所有配置信息（包括别名信息)
  <br />
 ![实战照片](D:picture/abc.png)
 		<!--
@@ -82,6 +82,7 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 		-->
 <hr><hr />
 <font size="4px">
+	
 ***这是分界线***
 <!--
 我还不会把文字插入在水平分界线的中间，有待学习
@@ -110,7 +111,11 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 
 在Git中，用HEAD表示当前版本.上一个版本就是`HEAD^`，上上一个版本就是`HEAD^^`，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
 
-<font color="#ad9" size="5px">**第三天**</font>
+<font color="#ad9" size="5px">
+	
+**第三天**
+</font>
+
 工作区就是有.git文件夹的地方
 
 .git文件夹内是版本库（版本库包含staged暂存区和branch分支）
