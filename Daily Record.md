@@ -1,4 +1,7 @@
+# ***第一天***
+
 # 这是一个段落
+
 
 香蕉派
 
@@ -44,9 +47,8 @@ aaaaa
 ~~我被删除了~~
 September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 
-<h1><font color="#0ff">
-		学习使用git的第二天
-</font></h1>
+# ***学习使用git的第二天***
+
 
 我在与`git pro`艰难地搏斗后彻底放弃
 
@@ -112,7 +114,7 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 
 <font color="#ad9" size="5px">
 	
-**第三天**
+# ***第三天***
 </font>
 
 工作区就是有.git文件夹的地方
