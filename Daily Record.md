@@ -156,5 +156,17 @@ git diff HEAD：是查看working tree和commit的差别的，在这里HEAD代表
 
 我在输入git reset sss.txt时出现了Use '--' to separate filenames from revisions，like this：```git <command> [<revision>...] -- [<file>...]```
 
-而用git reset -- sss.txt时很顺利，综合搜索我知道"用`--`分割文件名和版本号"，所以是否用了`--`但不输入版本号就默认head了呢，所以我输入git reset -- sss.txt时不会出现错误
+而用git reset -- sss.txt时很顺利，综合搜索我知道"用`--`分割文件名和版本号"，所以是否用了`--`但不输入版本号就默认head了呢，所以我输入git reset -- sss.txt时不会出现错误。
+
+在进一步学习后，其实git reset head sss.txt与上面功能相同，只要能让git区分即可
+
+更进一步地git reset学习请入https://www.cnblogs.com/kidsitcn/p/4513297.html
+
+另外，在我删除了几个无关文件并commit后，想要git push origin master，却因为远程仓库文件id数与本地commit中不一致导致无法提交，最后使用git pull --rebase origin master以本地commit为base，再融合了origin master的本地所未有的文件后成功地push进origin。
+
+git pull = git fetch + git merge
+git pull --rebase = git fetch + git rebase
+
+关于rebase和merge的不同，可以求助此网站https://blog.csdn.net/dake_160413/article/details/78676163
+
 
