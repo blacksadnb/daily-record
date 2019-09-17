@@ -76,10 +76,8 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
  $ git log //查看现在版本库的状态<br>
  $ cat .xxx // 查看当前文件（xxx）所有配置信息（包括别名信息)
  <br />
-![实战照片](D:picture/abc.png)
-		<!--
-			请把图片的本地链接改成网上链接！！！important
-		-->
+![image](https://github.com/blacksadnb/daily-record/blob/master/abc.png)
+
 <hr><hr />
 <font size="4px">
 	
