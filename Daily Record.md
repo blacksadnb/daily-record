@@ -78,12 +78,11 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
  $ git log //查看现在版本库的状态<br>
  $ cat .xxx // 查看当前文件（xxx）所有配置信息（包括别名信息)
  <br />
- 
+
 ![image](https://github.com/blacksadnb/daily-record/blob/master/abc.png)
 
 <hr><hr />
-<font size="4px">
-	
+
 ***这是分界线***
 <!--
 我还不会把文字插入在水平分界线的中间，有待学习
@@ -91,8 +90,6 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 晚上去听c的讲座，关键词大概就是：黑盒抽象，编译器，ide，占位符
 	
 觉得在学第一门编程语言之前先要简明地弄明白计算机的工作原理之类的
-
-</font>
 
 + 二进制最稳定以及二极管的通电特性，所以电脑用二进制
 + 位，就是数字抽象的基本单元
@@ -103,7 +100,6 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 + c语言的运行速度快的特性大概就因为从c语言编写的代码转译成机械代码的算法更简单，花的时间更少吧？
 
 <hr/>
-
 好了，开始继续学git的使用orz
 
 直接用微软记事本来编辑readme.txt的话，在git diff时无法识别文件修改前后的差别
@@ -112,10 +108,9 @@ September 16, 2019 1:36 AMSeptember 16, 2019 1:36 AM
 
 在Git中，用HEAD表示当前版本.上一个版本就是`HEAD^`，上上一个版本就是`HEAD^^`，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
 
-<font color="#ad9" size="5px">
-	
-# ***第三天***
-</font>
+<div style="background:#adf;line-height: 100px;text-align:center;"> <i>
+    <font color="#fba" size="10px">第三天</font>
+</div> </i>
 
 工作区就是有.git文件夹的地方
 
@@ -167,6 +162,22 @@ git diff HEAD：是查看working tree和commit的差别的，在这里HEAD代表
 git pull = git fetch + git merge
 git pull --rebase = git fetch + git rebase
 
-关于rebase和merge的不同，可以求助此网站https://blog.csdn.net/dake_160413/article/details/78676163
+关于rebase和merge的不同，可以求助此网站https://blog.csdn.net/dake_160413/article/details/78676163或者
+https://segmentfault.com/a/1190000012897637
 
+<div style="background:#abb;line-height: 100px;text-align:center;"> <i>
+    <font color="#12f" size="10px">第四天</font>
+</div> </i>
+
+当git中$变成>时，说明进入了xx模式，用`ctrl+d`可以退出该模式
+
+git diff和git log（$变成了：）可以通过按`q`退出
+
+另外，今天发现可以用git rebase合并多个commit，因为自己一开始对git很不熟练，所以有很多没意义的commit，等下试着合并一下。
+
+今天跑去学c语言了==，又是各种报错心累。
+
+明天再合并commit吧
+
+偷懒==
 
