@@ -181,3 +181,16 @@ git diff和git log（$变成了：）可以通过按`q`退出
 
 偷懒==
 
+# ***悲惨的第五天***
+
+TATATATAATATATATTATATTATAT
+
+因为对git rebase合并commit的不熟练，合并的commit比我预想的要多，从第一天到第二天的全没了，而且这些commit好像没有找回的办法。完蛋了！！！！！！！！！
+
+早知道换个地址搞或者提前备份了，完了，版本库没得了。。。
+
+一个字：惨
+
+另外，继续在学c语言
+
+我试一试push后会不会在github里的那些commit也消失。
