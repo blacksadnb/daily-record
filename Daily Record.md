@@ -194,3 +194,13 @@ TATATATAATATATATTATATTATAT
 另外，继续在学c语言
 
 我试一试push后会不会在github里的那些commit也消失。
+
+
+
+# ***第六天***
+
+经过检测，github上的commit没有消失
+
+今天学打标签，等有时间再试试git rebase来合并commit。
+
+就酱紫。
